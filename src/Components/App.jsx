@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./styles.css";
 
 const App = () => {
 
@@ -18,21 +19,37 @@ const App = () => {
 
     return (
         <>
-            <h1 style={{ "color": "red" }}>Weather App</h1>
-            <input type="search" onChange={(event) => {
+        <div className="box">
+        <div className="ocean">
+            <h1 style={{ "color": "#ffffff" }}>Weather App</h1>
+            <input className="custome-inp" type="search" onChange={(event) => {
                 Setsearch(event.target.value);
             }} />
             {!search ? (
-                <p>No Data Found</p>
+                <p className="custome-color">No Data Found</p>
             ) : (
                 <div>
-                    <h2>{search}</h2>
-                    <h3>{city}</h3>
+                    <h2 className="custome-color">{search}</h2>
+                    <h3 className="custome-color">{city}</h3>
                 </div>
             )
 
             }
-
+            <div class="bubble bubble--1"></div>
+  <div class="bubble bubble--2"></div>
+  <div class="bubble bubble--3"></div>
+  <div class="bubble bubble--4"></div>
+  <div class="bubble bubble--5"></div>
+  <div class="bubble bubble--6"></div>
+  <div class="bubble bubble--7"></div>
+  <div class="bubble bubble--8"></div>
+  <div class="bubble bubble--9"></div>
+  <div class="bubble bubble--10"></div>
+  <div class="bubble bubble--11"></div>
+  <div class="bubble bubble--12"></div>
+  <div id="octocat"></div>
+            </div>
+            </div>
         </>
     )
 }
